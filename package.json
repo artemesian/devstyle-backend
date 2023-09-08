@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
-  "author": "https://github.com/Gaetan-M",
+  "author": "https://github.com/artemesian",
   "license": "ISC",
   "dependencies": {
     "@forestadmin/agent": "^1.9.0",

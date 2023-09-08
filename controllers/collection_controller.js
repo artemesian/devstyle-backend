@@ -69,7 +69,7 @@ module.exports.getOneCollection = (req, res, next) => {
 module.exports.getOneCollectionAndGoodies = (req, res, next) => {
   Collection.findOne({ slug: req.params.slug, show: true })
     .then((collection) => {
-      Goodie.find({ fromCollection: collection._id })
+      Goodie.find({ fromCollection: collection._id, show: true })
         .then((goodies) => {
           res.status(200).json({ message: { collection, goodies } });
         })
